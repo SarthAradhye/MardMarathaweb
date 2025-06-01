@@ -76,3 +76,22 @@ nav a{
   opacity: 1;
   margin-left: 10%;
 }
+#about{
+    height: 100vh;
+    display: flex;
+    gap: 2em;
+    padding: 4%;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.text{
+    width: 50%;
+    font-family: "Amita";
+}
+.text h1{
+    font-family: 'Gotu';
+}
+.image img{
+    border: black solid 2px;
+    border-radius: 25px;
+}

@@ -65,6 +65,10 @@
         <div class="Marathi">मर्द मराठा</div>
       </div>
       <p>Would break but never bow!</p>
+      <div class="btns" style="display: flex; flex-wrap:wrap; gap:1em;">
+        <button onclick="Navi()" style="width:200px">Get copy now!</button>
+        <button onclick="openModal()" style="width:200px">Opt for free copy</button>
+      </div>
     </div>
   </div>
   <div id="about">
@@ -166,10 +170,58 @@
       </form>
     </div>
   </div>
+  <div id="modal" style="display:none; position:absolute; top:5%; left:5%; padding:5%; background:#eee; border:1px solid #ccc;border-radius:25px; z-index:10;">
+    <Div class="modalcont">
+      <button onclick="closeModal()" >Close</button>
+      <h1 style="font-family: 'Gotu';">Want a free copy?</h1>
+      <form action="https://formspree.io/f/mkgbogpb" method="POST">
+        <label for="Name">
+          Enter your name
+          <input type="text" name="Name" required>
+        </label>
+        <label for="mobile">
+          Enter your Mobile number
+          <input type="number" name="mobile" required>
+        </label>
+        <label for="Email">
+          Enter your email address
+          <input type="text" name="Email">
+        </label>
+        <label for="Referals">
+          Enter number of refereals you can bring
+          <input type="number" name="Referals" required>
+        </label>
+        <div style="display: grid;">
+          <p>Are you a college student</p>
+          <div class="display:flex;">
+            <label for="yes" style="justify-self: center;"> yes
+              <input type="checkbox" name="yes">
+            </label>
+            <label for="no" style="justify-self: center;"> no
+              <input type="checkbox" name="no">
+            </label>
+          </div>
+        </div>
+        <button type="submit">Submit application</button>
+      </form>
+    </Div>
+  </div>
   <footer>
     Mard Maratha @2025 all rights reserved
   </footer>
   <script src="script.js"></script>
+  <script>
+    function Navi(){
+      window.location.href="buy.html"
+    }
+    function openModal() {
+    document.getElementById('modal').style.display = 'block';
+  }
+
+  function closeModal() {
+    document.getElementById('modal').style.display = 'none';
+  }
+  </script>
 </body>
 
 </html>

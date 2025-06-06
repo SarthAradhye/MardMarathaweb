@@ -76,6 +76,13 @@ nav a{
   opacity: 1;
   margin-left: 10%;
 }
+#home button{
+    background-color: white;
+    color: black;
+    border: black solid 1px;
+    border-radius: 5px;
+   font-family: "Gotu", sans-serif;
+}
 #about{
     min-height: 100vh;
     display: flex;
